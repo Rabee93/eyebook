@@ -1,12 +1,19 @@
 <%= form_with scope: :posts, local: true do |form| %>
   <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
+    <%= form.label :type %><br>
+    <%= form.select :type, ['house', 'flat', 'shared property']%>
   </p>
-
+<p>
+  <%= form.label :bedroom %><br>
+    <%= form.select :bedroom, ['1', '2', '3','4']%>
+    </p>
+    <p>
+      <%= form.label :city %><br>
+        <%= form.select :city, ['London', 'Manchester', 'Birmingham','Leeds']%>
+        </p>
   <p>
-    <%= form.label :text %><br>
-    <%= form.text_area :text %>
+    <%= form.label :comments %><br>
+    <%= form.text_area :comments %>
   </p>
 
   <p>
