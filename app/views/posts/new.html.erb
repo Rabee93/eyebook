@@ -1,4 +1,4 @@
-<%= form_with scope: :posts, local: true do |form| %>
+<%= form_with scope: :post, url: posts_path, local: true do |form| %>
   <p>
     <%= form.label :type %><br>
     <%= form.select :type, ['house', 'flat', 'shared property']%>
@@ -9,13 +9,16 @@
     </p>
     <p>
       <%= form.label :city %><br>
-        <%= form.select :city, ['London', 'Manchester', 'Birmingham','Leeds']%>
-        </p>
+      <%= form.select :city, ['London', 'Manchester', 'Birmingham','Leeds']%>
+   </p>
   <p>
     <%= form.label :comments %><br>
     <%= form.text_area :comments %>
   </p>
-
+  <p>
+    <%= form.label :images %><br>
+     <%= form.file_field :picture %>
+  </p>
   <p>
     <%= form.submit %>
   </p>
