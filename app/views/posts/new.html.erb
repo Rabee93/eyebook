@@ -1,7 +1,7 @@
 <%= form_with scope: :post, url: posts_path, local: true do |form| %>
   <p>
     <%= form.label :type %><br>
-    <%= form.select :type, ['house', 'flat', 'shared property']%>
+    <%= form.select :property_type, ['house', 'flat', 'shared property']%>
   </p>
 <p>
   <%= form.label :bedroom %><br>

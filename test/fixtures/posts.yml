@@ -1,7 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  type: 
+  property_type:
   bedroom: 1
   city: MyString
   comments: MyText
@@ -9,7 +9,7 @@ one:
   user: one
 
 two:
-  type: 
+  property_type:
   bedroom: 1
   city: MyString
   comments: MyText

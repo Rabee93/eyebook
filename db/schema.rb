@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2020_10_02_193914) do
 
   create_table "posts", force: :cascade do |t|
-    t.string "type"
+    t.string "property_type"
     t.integer "bedroom"
     t.string "city"
     t.text "comments"
