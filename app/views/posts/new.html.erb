@@ -5,7 +5,7 @@
   </p>
 <p>
   <%= form.label :bedroom %><br>
-    <%= form.select :bedroom, ['1', '2', '3','4']%>
+    <%= form.select :bedroom, [1, 2, 3, 4]%>
     </p>
     <p>
       <%= form.label :city %><br>
@@ -17,7 +17,7 @@
   </p>
   <p>
     <%= form.label :images %><br>
-     <%= form.file_field :picture %>
+     <%= form.text_area :picture %>
   </p>
   <p>
     <%= form.submit %>

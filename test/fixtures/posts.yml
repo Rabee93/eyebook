@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  bedroom: 1
+  city: MyString
+  comments: MyText
+  picture: MyString
+  user: one
+
+two:
+  type: 
+  bedroom: 1
+  city: MyString
+  comments: MyText
+  picture: MyString
+  user: two
