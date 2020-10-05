@@ -1,0 +1,25 @@
+<%= form_with model: @post, local: true do |form| %>
+  <p>
+    <%= form.label :type %><br>
+    <%= form.select :property_type, ['house', 'flat', 'shared property']%>
+  </p>
+<p>
+  <%= form.label :bedroom %><br>
+    <%= form.select :bedroom, [1, 2, 3, 4]%>
+    </p>
+    <p>
+      <%= form.label :city %><br>
+      <%= form.select :city, ['London', 'Manchester', 'Birmingham','Leeds']%>
+   </p>
+  <p>
+    <%= form.label :comments %><br>
+    <%= form.text_area :comments %>
+  </p>
+  <p>
+    <%= form.label :images %><br>
+     <%= form.text_area :picture %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

@@ -1,9 +1,12 @@
-
+<% if @let %>
+<h1> Your properties</h1>
+<%else%>
 <h1>Current properties</h1>
+<%end%>
 
 <table>
   <tr>
-    <th>user id</th>
+    <th>email</th>
     <th>bedroom</th>
     <th>location</th>
     <th>type</th>
@@ -14,12 +17,23 @@
 
   <% @posts.each do |p| %>
     <tr>
-      <td><%= p.user.id %></td>
+      <td><%= p.user.email %></td>
       <td><%= p.bedroom %></td>
       <td><%= p.city %></td>
       <td><%= p.property_type %></td>
       <td><%= p.comments%></td>
       <td><img height="100" src="<%= p.picture%>"></img></td>
+      <% if @let %>
+      <td><%= link_to 'Edit', edit_post_path(p) %></td>
+      <td><%= link_to 'Destroy', post_path(p),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+
+      <%end%>
     </tr>
   <% end %>
 </table>
+<% if @let %>
+<%= link_to 'New post', new_post_path %>
+<%= link_to 'Logout', user_registration_path, method: :delete %>
+<% end%>
