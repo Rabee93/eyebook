@@ -35,5 +35,5 @@
 </table>
 <% if @let %>
 <%= link_to 'New post', new_post_path %>
-<%= link_to 'Logout', user_registration_path, method: :delete %>
+<%= link_to 'Logout', destroy_user_session_path, method: :delete %>
 <% end%>
