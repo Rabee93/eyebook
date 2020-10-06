@@ -43,6 +43,6 @@ def new
 
   private
     def post_params
-      params.require(:post).permit(:property_type,:city, :bedroom,:comments, :picture)
+      params.require(:post).permit(:property_type,:city, :bedroom,:price, :comments, :picture)
     end
 end
