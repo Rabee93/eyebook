@@ -40,3 +40,18 @@
     cursor: pointer;
     margin: auto;
   }
+
+  th{
+    margin: 0px;
+    padding: 10px;
+    border-style: inset;
+  }
+  td{
+    margin: 0px;
+    padding: 10px;
+    border-style: inset;
+  }
+
+  img{
+
+  }
