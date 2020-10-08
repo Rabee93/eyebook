@@ -12,13 +12,16 @@
 
 ActiveRecord::Schema.define(version: 2020_10_06_191719) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "posts", force: :cascade do |t|
     t.string "property_type"
     t.integer "bedroom"
     t.string "city"
     t.text "comments"
     t.string "picture"
-    t.integer "user_id", null: false
+    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "price"
