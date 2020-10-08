@@ -1,0 +1,42 @@
+
+.main_h1{
+
+  font-family: Impact, Charcoal, sans-serif;
+  color: #fca652
+}
+
+
+
+.main_body {
+     background-image: url('https://i.pinimg.com/originals/93/c7/44/93c744bcde1780c94bb1d3f03991f8a7.gif');
+     background-size: cover;
+
+
+
+     height: 100vh;
+     padding:0;
+     margin:0;
+ }
+
+
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+  .button {
+    position: relative;
+    background-color: #51adcf;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    margin: auto;
+  }

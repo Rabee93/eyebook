@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
 <html>
-<body>
+<body class="main_body">
 
-<h1>Eyebook</h1>
+<h1 class="main_h1 center">Eyebook</h1>
+<div class="center">
+<%= link_to 'Let', posts_path("let" => true), class: "button" %>
 
-<%= link_to 'Let', posts_path("let" => true) %>
-<br>
-<%= link_to 'Rent', posts_path %>
-
+<%= link_to 'Rent', posts_path, class: "button" %>
+</div>
 </body>
 </html>
