@@ -1,24 +1,8 @@
-# README
+# eyebook
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a website similar to gumtree where users can post ads of their properties and buy .
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Download and run the app:
+- clone the respository.
+- open the terminal and type cd to eyebook.
+- open in the browser to use it.
